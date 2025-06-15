@@ -1,0 +1,187 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;color: aliceblue;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 255, 140, 0.534);
+}
+#cont{
+    height: 500px;
+    width: 250px;
+    border: 1px solid rgb(255, 255, 255);
+     display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+     border: 5px solid whitesmoke;
+    border-radius: 20px;
+    background-image: url("download.jpeg");
+}
+button{
+    /* background:linear-gradient(90deg,rgb(204, 141, 141),white,rgb(255, 107, 132),white,rgb(255, 107, 132)); */
+    border-radius: 10px;
+    border: 0px;
+    background-color: transparent;
+}
+a{ 
+animation: animat 5s ease-in-out infinite;
+background: linear-gradient(90deg,#98ff98,rgb(255, 120, 203),#98ff98);
+padding: 2px;
+background-size: 300%;
+height: 30px;
+border-radius: 10px;
+border: transparent;
+display:flex;
+align-items: center;
+text-decoration: none;
+
+}
+@keyframes animat{
+      0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%; 
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+img{
+     height: 450px;
+    width:max-content;
+    border: 1px solid white;
+    width: max-content;
+    margin:20px;
+    border-radius: 10px;
+    box-shadow: inset -8px -8px 2px rgba(0, 0, 0, 0.686), inset 3px 3px 2px rgba(255, 255, 255, 0.918);
+}
+#imgCont{
+    /* box-shadow: inset 8px 8px 8px rgba(0, 0, 0, 0.686), inset -8px -8px 8px rgba(17, 0, 0, 0.441); */
+    border-radius: 10px;
+    height:500px;
+    width: 200px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    background-image: url(WhatsApp\ Image\ 2024-06-11\ at\ 06.38.17_8c46f313.jpg);
+     background-size: cover; 
+     background-repeat: no-repeat; 
+     text-align: center;
+     margin-top: 10px;
+     animation: shadowAn 10s ease-in infinite ;
+     background-color: rgba(255, 192, 203, 0.822);
+     border: 5px solid whitesmoke;
+    
+}
+@keyframes shadowAn{
+    0%{
+       box-shadow: inset 8px 8px 8px rgba(249, 1, 233, 0.441), inset -8px -8px 8px rgba(247, 244, 244, 0.49); 
+    }
+    25%{
+        box-shadow: inset 8px 8px 8px rgba(247, 244, 244, 0.49), inset -8px -8px 8px rgba(249, 1, 233, 0.441);
+    }
+    50%{
+         box-shadow: inset 8px 8px 8px rgba(249, 1, 233, 0.441), inset -8px -8px 8px rgba(247, 244, 244, 0.49); 
+    }
+    75%{
+        box-shadow: inset 8px 8px 8px rgba(247, 244, 244, 0.49), inset -8px -8px 8px rgba(249, 1, 233, 0.441);
+    }
+    100%{
+        box-shadow: inset 8px 8px 8px rgba(249, 1, 233, 0.441), inset -8px -8px 8px rgba(247, 244, 244, 0.49);
+    }
+}
+#heart{
+    display: flex;
+    flex-direction: row;
+}
+.hearts{
+    margin: 5px;
+    height: 25px;
+    width: 25px;
+    background-color: red;
+    position: relative;
+    transform: rotate(-43deg);
+   z-index: 2;
+   
+}
+.hearts::before,.hearts::after{
+content: "";
+   position: absolute;
+   height: 25px;
+   width: 25px;
+   border-radius:50%;
+   background-color: rgb(255, 0, 13);
+   
+}
+.hearts::before {
+   left: 0px;
+   top: -15px;
+   /* border: 1px solid rgb(166, 238, 130); */
+}
+
+.hearts::after {
+   left: 15px;
+   top: 0px;
+}
+#h1{
+top: 50px;
+animation: heart 5s infinite ease-in-out;
+}
+#h2{
+top: 140px;
+animation: heart 3s infinite ease-in-out;
+}
+#h3{
+top: 110px;
+animation: heart 8s infinite ease-in-out;
+}
+#h4{
+top: -50px;
+animation: heart 6s infinite ease-in-out;
+}
+#h0{
+top: 40px;
+animation: heart 3s infinite ease-in-out;
+}
+#h5{
+top: 50px;
+animation: heart 4s infinite ease-in-out;
+}
+#h6{
+top: 30px;
+animation: heart 5s infinite ease-in-out;
+}
+#h7{
+top: 120px;
+animation: heart 2s infinite ease-in-out;
+}
+#h8{
+top: 50px;
+animation: heart 5s infinite ease-in-out;
+}
+#h9{
+top: 150px;
+animation: heart 7s infinite ease-in-out;
+}
+@keyframes heart{
+    0%{
+        scale: 0.1;
+        opacity: 0.5;
+    }
+    50%{
+        scale: 0.5;
+        opacity: 1;
+        top: -500px;
+    }
+    100%{
+        scale: 0.1;
+        opacity: 0.5;
+    }
+}

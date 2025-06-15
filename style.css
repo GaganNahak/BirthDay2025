@@ -1,0 +1,14 @@
+#img{
+    object-fit: contain;
+    animation: changeImg 1s infinite;
+    height: 100px;
+    width: 100px;
+}
+@keyframes changeImg{
+    0%{
+        background-image: url();
+    }
+    100%{
+        background-image: url();
+    }
+}
