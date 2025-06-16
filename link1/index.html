@@ -9,6 +9,7 @@
     </head>
 
     <body>
+      
         <div id="cont">
             
             <div id="imgCont">
@@ -33,6 +34,7 @@
                     '''Celebrate Your Special Day Ghusuri😁😁
                     By Talking To Me 😅😅'''
                 </p>
+                <button onclick="playAudio()" id="player"></button>
                 <p>Click Below To See Our Memory🤭🤭 That I spend With You In Your Small Village☺️☺️</p>
                 <p><u>👇👇</u></p>
             </div>
@@ -49,7 +51,27 @@
         <div class="hearts" id="h7"></div>
         <div class="hearts" id="h8"></div>
         <div class="hearts" id="h9"></div>
+        
         </div>
+        
+        <audio src="VID_20250616202059.mp3" id="aud" loop></audio>
+        <script>
+            var play=true
+            function playAudio(){
+                document.getElementById('aud').play()
+                if(play===false){
+                    document.getElementById('aud').pause()
+                    play=true
+                    document.getElementById('player').style.backgroundImage = "url('play.png')";
+                }
+                else{
+                    document.getElementById('aud').play()
+                    play=false
+                    document.getElementById('player').style.backgroundImage = "url('play.jpeg')";
+                }
+
+            }
+        </script>
     </body>
 
 </html>
