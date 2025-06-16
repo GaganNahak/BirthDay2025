@@ -28,12 +28,24 @@
             <video src="VID20250603121614.mp4" class="photos" controls></video>
         </div>
         <script>
-            let pass = prompt( "Enter password " )
+            
+  document.addEventListener('contextmenu', event => event.preventDefault());
 
-            if ( pass !== "Ghusuri2025" ) {
-                document.getElementById( 'container' ).remove()
-                alert( "enter right password" )
+
+            let pass = prompt( "Enter password " )
+            document.getElementById( 'container' ).style.display="none"
+            let key="Ghusuri2025"
+            if ( pass !== key ) {
+                document.getElementById( 'container' ).style.display="none"
+                alert( " Refresh the page and enter right password 😤😤😤" )
+
                 console.log( "wrong" )
+            }
+            if(pass==key){
+                document.getElementById( 'container' ).style.display="block"
+                alert("Ghusuri 😃😃☺️ Take A Look At Our Memories")
+                alert("Again Happy Happy Returns Of The Day 🎉🎉🥳🥳")
+                key=" "
             }
         </script>
     </body>
