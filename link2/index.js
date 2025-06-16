@@ -1,3 +1,4 @@
+
 const nodemailer = require("nodemailer");
 
 // Use your email and app password
@@ -29,3 +30,5 @@ async function sendEmail() {
 }
 
 sendEmail()
+
+

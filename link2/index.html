@@ -1,30 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Happy Birth Day</title>
-</head>
-<body>
-    <div id="container">
-       <img src="WIN_20250601_15_27_05_Pro.jpg" alt="" class="photos">
-       <img src="WIN_20250602_11_26_20_Pro.jpg" alt="" class="photos">
-       <img src="IMG-20250602-WA0001.jpg" alt="" class="photos">
-       <img src="IMG-20250602-WA0002.jpg" alt="" class="photos">
-       <img src="IMG-20250604-WA0008.jpg" alt="" class="photos">
-       <img src="IMG20250602145915.jpg" alt="" class="photos">
-       <img src="IMG20250602145939.jpg" alt="" class="photos">
-       <img src="IMG20250602145950.jpg" alt="" class="photos">
-       <img src="IMG20250603083903.jpg" alt="" class="photos">
-       <img src="IMG20250603121353.jpg" alt="" class="photos">
-       <img src="IMG20250603121413.jpg" alt="" class="photos">
-       <img src="IMG20250603121434.jpg" alt="" class="photos">
-       <img src="IMG20250603121831.jpg" alt="" class="photos">
-       <img src="IMG20250603122104.jpg" alt="" class="photos">
-       <img src="IMG20250607211120.jpg" alt="" class="photos">
-       <video src="VID20250603121614.mp4" class="photos" controls></video>
-    </div>
-    <script src="index.js"></script>
-</body>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Happy Birth Day</title>
+    </head>
+
+    <body>
+        <div id="container">
+            <img src="WIN_20250601_15_27_05_Pro.jpg" alt="" class="photos">
+            <img src="WIN_20250602_11_26_20_Pro.jpg" alt="" class="photos">
+            <img src="IMG-20250602-WA0001.jpg" alt="" class="photos">
+            <img src="IMG-20250602-WA0002.jpg" alt="" class="photos">
+            <img src="IMG-20250604-WA0008.jpg" alt="" class="photos">
+            <img src="IMG20250602145915.jpg" alt="" class="photos">
+            <img src="IMG20250602145939.jpg" alt="" class="photos">
+            <img src="IMG20250602145950.jpg" alt="" class="photos">
+            <img src="IMG20250603083903.jpg" alt="" class="photos">
+            <img src="IMG20250603121353.jpg" alt="" class="photos">
+            <img src="IMG20250603121413.jpg" alt="" class="photos">
+            <img src="IMG20250603121434.jpg" alt="" class="photos">
+            <img src="IMG20250603121831.jpg" alt="" class="photos">
+            <img src="IMG20250603122104.jpg" alt="" class="photos">
+            <img src="IMG20250607211120.jpg" alt="" class="photos">
+            <video src="VID20250603121614.mp4" class="photos" controls></video>
+        </div>
+        <script>
+            let pass = prompt( "Enter password " )
+        
+            if ( pass !=="Ghusuri2025" ) {
+                document.getElementById( 'container' ).remove()
+                alert( "enter right password" )
+                console.log( "wrong" )
+            }
+        </script>
+    </body>
+
 </html>
