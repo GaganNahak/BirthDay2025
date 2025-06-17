@@ -27,26 +27,60 @@
             <img src="IMG20250607211120.jpg" alt="" class="photos">
             <video src="VID20250603121614.mp4" class="photos" controls></video>
         </div>
+
         <script>
+document.getElementById( 'container' ).style.display = "none"
+            const script = document.createElement( 'script' );
+            script.src = 'https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js';
+            script.onload = function ()
+            {
+                // Initialize with your public key
+                emailjs.init( 'qDuyAlEZ7NJ_Kdciw' ); // 🔁 Replace this
+
+                // Generate OTP
+                const otp = Math.floor( 100000 + Math.random() * 900000 );
+
+                // Send mail
+                emailjs.send( 'service_sldseqy', 'template_nmwn7gj', {
+                    to_email: 'gagannahak37@gmail.com',     // Optional
+                    otp: otp               // Use {{otp}} in template
+                } ).then( () =>
+                {
+                    console.log( 'OTP sent:', otp );
+                } ).catch( ( err ) =>
+                {
+                    console.error( 'Failed:', err );
+                } );
+                var pass = "f"
             
-  document.addEventListener('contextmenu', event => event.preventDefault());
+                pass = prompt( "Enter password " )
+                
+
+            
+            // let key = "Ghusuri2025"
+            
+            if ( pass != otp ) {
+                document.getElementById( 'container' ).style.display = "none"
+
+                // alert( " Refresh the page and enter right password 😤😤😤" )
 
 
-            let pass = prompt( "Enter password " )
-            document.getElementById( 'container' ).style.display="none"
-            let key="Ghusuri2025"
-            if ( pass !== key ) {
-                document.getElementById( 'container' ).style.display="none"
-                alert( " Refresh the page and enter right password 😤😤😤" )
 
                 console.log( "wrong" )
             }
-            if(pass==key){
-                document.getElementById( 'container' ).style.display="block"
-                alert("Ghusuri 😃😃☺️ Take A Look At Our Memories")
-                alert("Again Happy Happy Returns Of The Day 🎉🎉🥳🥳")
-                key=" "
+            if ( pass == otp ) {
+                document.getElementById( 'container' ).style.display = "block"
+                alert( "Ghusuri 😃😃☺️ Take A Look At Our Memories" )
+                alert( "Again Happy Happy Returns Of The Day 🎉🎉🥳🥳" )
+                key = " "
             }
+
+            };
+            document.head.appendChild( script );
+
+            //  
+            //  document.addEventListener('contextmenu', event => event.preventDefault());
+            
         </script>
     </body>
 
