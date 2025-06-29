@@ -213,7 +213,23 @@ audio{
     height: 30px;
     width: 30px;
     border: 1px solid white;
-    background-image: url(play.png);
+    /* background-image: url(play.png); */
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.loader{
+   height: 30px;
+    width: 30px; 
+    border: 1px 0px 0px 0px solid white;
+    border-radius: 50%;
+    animation: loader 1s infinite ease-in-out;
+}
+@keyframes loader{
+   0%{
+    rotate: 360deg;
+   }
+   100%{
+    rotate: 360deg;
+   }
 }

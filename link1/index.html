@@ -9,11 +9,11 @@
     </head>
 
     <body>
-      
+
         <div id="cont">
-            
+
             <div id="imgCont">
-                <div id="text" >Happy BirthDay 🥳🎉🥳<u>Ghusuri</u>😁😁</div>
+                <div id="text">Happy BirthDay 🥳🎉🥳<u>Ghusuri</u>😁😁</div>
                 <p>
 
                     '''Ghusuri😁😁
@@ -38,39 +38,47 @@
                 <p>Click Below To See Our Memory🤭🤭 That I spend With You In Your Small Village☺️☺️</p>
                 <p><u>👇👇</u></p>
             </div>
-            <a href="https://gagannahak.github.io/BirthDay2025/link2/index.html" target="_blank"><button>Click TO See Something!!!</button></a>
+            <a href="https://gagannahak.github.io/BirthDay2025/link2/index.html" target="_blank"><button>Click TO See
+                    Something!!!</button></a>
         </div>
         <div id="heart">
-        <div class="hearts" id="h0"></div>
-        <div class="hearts" id="h1"></div>
-        <div class="hearts" id="h2"></div>
-        <div class="hearts" id="h3"></div>
-        <div class="hearts" id="h4"></div>
-        <div class="hearts" id="h5"></div>
-        <div class="hearts" id="h6"></div>
-        <div class="hearts" id="h7"></div>
-        <div class="hearts" id="h8"></div>
-        <div class="hearts" id="h9"></div>
-        
+            <div class="hearts" id="h0"></div>
+            <div class="hearts" id="h1"></div>
+            <div class="hearts" id="h2"></div>
+            <div class="hearts" id="h3"></div>
+            <div class="hearts" id="h4"></div>
+            <div class="hearts" id="h5"></div>
+            <div class="hearts" id="h6"></div>
+            <div class="hearts" id="h7"></div>
+            <div class="hearts" id="h8"></div>
+            <div class="hearts" id="h9"></div>
+
         </div>
-        
+
         <audio src="VID_20250616202059.mp3" id="aud" loop></audio>
         <script>
-            var play=true
-            function playAudio(){
-                document.getElementById('aud').play()
-                if(play===false){
-                    document.getElementById('aud').pause()
-                    play=true
-                    document.getElementById('player').style.backgroundImage = "url('play.png')";
+            const audio = document.getElementById( "aud" )
+            const player = document.getElementById( "player" )
+            var play = true
+            function playAudio ()
+            {
+                audio.play()
+                if ( play === false ) {
+                    audio.pause()
+                    play = true
+                    player.style.backgroundImage = "url('play.png')";
                 }
-                else{
-                    document.getElementById('aud').play()
-                    play=false
-                    document.getElementById('player').style.backgroundImage = "url('play.jpeg')";
+                else {
+                    audio.play()
+                    play = false
+                    player.style.backgroundImage = "url('play.jpeg')";
                 }
 
+             
             }
+
+
+
         </script>
     </body>
 
